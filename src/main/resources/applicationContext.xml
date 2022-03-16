@@ -22,7 +22,9 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="ua.bokarev.springcourse.MusicPlayer">
+          class="ua.bokarev.springcourse.MusicPlayer"
+            scope = "prototype">
+
         <property name="musicList">
             <list>
                 <ref bean="musicBean1"/>
