@@ -11,4 +11,10 @@
           class="ua.bokarev.springcourse.ElectronicalMusic">
     </bean>
 
+    <bean id="musicPlayer"
+          class="ua.bokarev.springcourse.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+    </bean>
+
+
 </beans>
