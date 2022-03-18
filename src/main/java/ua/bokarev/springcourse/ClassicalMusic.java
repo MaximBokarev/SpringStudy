@@ -1,17 +1,10 @@
 package ua.bokarev.springcourse;
 
-public class ClassicalMusic implements Music{
-    private ClassicalMusic(){};
+import org.springframework.stereotype.Component;
 
-    public static ClassicalMusic getClassicalMusic(){
-        return new ClassicalMusic();
-    }
-    public void doMyInit(){
-        System.out.println("Doing my initialization");
-    }
-    public void doMyDestroy(){
-        System.out.println("Doing my destruction");
-    }
+@Component
+public class ClassicalMusic implements Music{
+
     @Override
     public String getSong() {
         return "Hungarian Rhapsody";
